@@ -19,11 +19,11 @@ import { Link } from "react-scroll";
 // ================================
 const PROFILE = {
   name: "Safiullah Ansari",
-  title: "Frontend Developer",
+  title: "Full Stack Developer",
   summary:
     "I build fast, accessible, and responsive web interfaces using React, TypeScript, and Tailwind. I focus on clean UX, strong semantics, and scalable component systems.",
   location: "India",
-  email: "rajali1432@gmail.com",
+  email: "safiansari9572@gmail.com",
   phone: "+91 9572125942",
   githubUsername: "raj9572", // ← replace with your real GitHub handle
   links: {
@@ -82,7 +82,7 @@ const PROJECTS = [
     tags: ["React","Redux", "Scss","Nodejs","Express","MongoDB"],
     description:
       "Full-stack social media platform featuring real-time messaging, user profiles, content sharing, and interactive community engagement features.",
-    link: "https://github.com/raj9572/social_media",
+    link: "https://social-media-1-wsme.onrender.com",
     image: "https://ik.imagekit.io/awrhl9mfek/social-media-image.png?updatedAt=1755600214092",
   },
   {
@@ -90,7 +90,7 @@ const PROJECTS = [
     tags: ["React", "Redux-Toolkit","Tailwind","Nodejs","Express","MongoDB"],
     description:
       "Modern e-commerce clothing platform with secure payments, inventory management, user authentication, and responsive shopping cart functionality.",
-    link: "https://github.com/raj9572/codeswear_client",
+    link: "https://codeswear-client.vercel.app",
     image: "https://ik.imagekit.io/awrhl9mfek/codeswear-image.png?updatedAt=1755600264750",
   },
   {
@@ -98,7 +98,7 @@ const PROJECTS = [
     tags: ["React", "tailwind","shadcn-ui"],
     description:
       "Responsive personal portfolio showcasing technical skills, project highlights, professional experience, and modern web development capabilities.",
-    link: "#",
+    link: "https://safiportfolio.netlify.app",
     image: "https://ik.imagekit.io/awrhl9mfek/portfolio-image.png?updatedAt=1755601735664",
   },
   {
@@ -106,7 +106,7 @@ const PROJECTS = [
     tags: ["React", "Tailwind","Redux-Toolkit", "TypeScript", "Nodejs","Express","MongoDB"],
     description:
       "Digital bookstore platform with search functionality, user reviews, secure checkout, reading recommendations, and comprehensive library management.",
-    link: "#",
+    link: "https://github.com/raj9572/ebook-apis",
     image: "https://ik.imagekit.io/awrhl9mfek/elib_image.png?updatedAt=1755613137130",
   },
   {
@@ -228,11 +228,11 @@ export default function PortfolioSite() {
               <p className="mt-4 text-xl">I am <span className="font-semibold">{PROFILE.name}</span></p>
               <p className="text-muted-foreground">{PROFILE.title}</p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Button asChild>
-                  <Link to="contact" smooth={true} duration={600} offset={-70} ><Send className="h-4 w-4 mr-2 cursor-pointer"/>Contact Me</Link>
+                <Button asChild className="cursor-pointer">
+                  <Link to="contact" smooth={true} duration={600} offset={-70} ><Send className="h-4 w-4 mr-2 "/>Contact Me</Link>
                 </Button>
-                <Button asChild variant="outline">
-                  <Link href="projects" smooth={true} duration={600} offset={-70} ><ExternalLink className="h-4 w-4 mr-2 cursor-pointer"/>View Projects</Link>
+                <Button asChild variant="outline" className="cursor-pointer">
+                  <Link to="projects" smooth={true} duration={600} offset={-70} ><ExternalLink className="h-4 w-4 mr-2 cursor-pointer"/>View Projects</Link>
                 </Button>
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
