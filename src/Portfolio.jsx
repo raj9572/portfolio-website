@@ -6,7 +6,7 @@ import { FaCss3Alt, FaGithub, FaHtml5, FaLinkedin, FaNodeJs, FaReact, FaSass } f
 import { VscVscode } from "react-icons/vsc";
 import { BiLogoNetlify } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiMongodb, SiVite, SiGithub, SiJson,  SiBootstrap, SiExpress, SiPostman, SiVercel,   } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiRedux, SiMongodb, SiVite, SiGithub, SiJson,  SiBootstrap, SiExpress, SiPostman, SiVercel,SiSocketdotio    } from "react-icons/si";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -59,13 +59,14 @@ const NAV = [
   { name: "TypeScript", icon: <SiTypescript size={40} color="#3178C6" />, category: "Frontend" },
   { name: "Tailwind CSS", icon: <SiTailwindcss size={40} color="#38BDF8" />, category: "Frontend" },
   { name: "Redux", icon: <SiRedux size={40} color="#764ABC" />, category: "Frontend" },
-  { name: "Node.js", icon: <FaNodeJs size={40} color="#3C873A" />, category: "Backend" },
-  { name: "Mongodb", icon: <SiMongodb size={40} color="#3C873A" />, category: "Backend" },
-  { name: "Express", icon: <SiExpress size={40} color="#3C873A" />, category: "Backend" },
-  { name: "Sass", icon: <FaSass size={40} color="#CC6699" />, category: "Frontend" },
+   { name: "Sass", icon: <FaSass size={40} color="#CC6699" />, category: "Frontend" },
   { name: "HTML5", icon: <FaHtml5 size={40} color="#E34F26" />, category: "Frontend" },
   { name: "CSS3", icon: <FaCss3Alt size={40} color="#1572B6" />, category: "Frontend" },
   { name: "Bootstrap", icon: <SiBootstrap size={40} color="#7952B3" />, category: "Frontend" },
+  { name: "Node.js", icon: <FaNodeJs size={40} color="#3C873A" />, category: "Backend" },
+  { name: "Mongodb", icon: <SiMongodb size={40} color="#3C873A" />, category: "Backend" },
+  { name: "Express", icon: <SiExpress size={40} color="#3C873A" />, category: "Backend" },
+  { name: "Socket.io", icon: <SiSocketdotio  size={40} color="#000000" />, category: "Backend" },
   { name: "Vite", icon: <SiVite size={40} color="#646CFF" />, category: "Tools" },
   { name: "VSCode", icon:<VscVscode size={40} color="#007ACC" /> , category: "Tools" },
   { name: "GitHub", icon: <SiGithub size={40} />, category: "Tools" },
@@ -92,6 +93,15 @@ const PROJECTS = [
       "Modern e-commerce clothing platform with secure payments, inventory management, user authentication, and responsive shopping cart functionality.",
     link: "https://codeswear-client.vercel.app",
     image: "https://ik.imagekit.io/awrhl9mfek/codeswear-image.png?updatedAt=1755600264750",
+  },
+  
+  {
+    title: "Chating Web App",
+    tags: ["React", "Redux-Toolkit","Tailwind","Nodejs","Express","Socket.io","MongoDB"],
+    description:
+      "A real-time messaging web app enabling users to chat instantly with others. Implemented online/offline user status tracking.",
+    link: "https://chat-app-frontend-phi-nine.vercel.app",
+    image: "https://ik.imagekit.io/awrhl9mfek/chat-app.png?updatedAt=1757445201288",
   },
   {
     title: "Portfolio Website",
